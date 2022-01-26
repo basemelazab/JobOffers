@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: Offers, Configuration: Debug Any CPU ------
+1>  Offers -> C:\Users\www\Desktop\650\Offers\Offers\bin\Offers.dll
+1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(4392,5): warning MSB3061: Unable to delete file "C:\Users\www\Desktop\650\Offers\Offers\bin\EntityFrameworkViewMigrations.PowerShellCommands.dll". Access to the path 'C:\Users\www\Desktop\650\Offers\Offers\bin\EntityFrameworkViewMigrations.PowerShellCommands.dll' is denied.
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

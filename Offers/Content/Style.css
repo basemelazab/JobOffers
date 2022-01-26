@@ -1,0 +1,54 @@
+﻿html { overflow-y: scroll; }
+@font-face{
+    font-family:inherit;
+}
+body{
+    padding-top:10px;
+}
+
+.myfooter{
+    background-color:cornflowerblue;
+    padding:10px;
+    text-align:justify;
+    height:auto;
+}
+
+.subfooter{
+    background-color:darkblue;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+.logo-size{
+    width:120px;
+    height:20px;
+    margin-top:-7px;
+    background-color:red;
+}
+.container{
+    height:auto;
+}
+#searchName
+{
+    width:130px;
+    border:2px solid #ccc;
+    border-radius :5px;
+    background-color:white;
+    background-image:url('..//Images/Logo.png');
+    background-repeat:no-repeat;
+}
+
+#searchName:focus
+{
+     width:100%;
+ }
+.img-size
+{
+    font-size:70px;
+}
+.navbar-user
+{
+    padding:10px;
+    padding-bottom:0px;
+    width:350px;
+}

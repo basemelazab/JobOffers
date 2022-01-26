@@ -1,0 +1,53 @@
+﻿@model Offers.Models.Jobs
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2 style="margin-top:50px">Details</h2>
+
+<div>
+    <h4>Jobs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobImage)
+        </dt>
+
+        <dd>
+            <img src="~/uploads/@Html.DisplayFor(model => model.JobImage)"
+                 class="thumbnail"
+                 style="width:128px; height:128px;" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Apply", "Apply", new { id = Model.Id }, new { @class=" btn btn-success"}) 
+    @Html.ActionLink("Back to List", "Index", new { @class = " btn btn-default" })
+</p>

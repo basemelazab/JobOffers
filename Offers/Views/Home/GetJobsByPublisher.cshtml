@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Offers.Models.JobsViewModel>
+
+@using  Microsoft.AspNet.Identity.EntityFramework
+
+@using WebApplication1.Models
+
+@foreach( var gr in Model)
+{
+   <h3 style="margin-top:50px"> @gr.JobTitle</h3>
+    <table class="table table-bordered table-hover" >
+        <tr>
+            <th>UserName </th>
+            <th> Message</th>
+            <th>ApplyDate</th>
+        </tr>
+        @foreach(var item in gr.items)
+        {
+            <tr>
+               <td>@item.user.UserName</td>
+                <td>@item.Message</td>
+                <td>@item.ApplyDate</td>
+
+            </tr>
+        }
+
+
+    </table>
+}
+
+
